@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("myData", Context.MODE_PRIVATE);
         int a = sharedPreferences.getInt("soA",0);
         int b = sharedPreferences.getInt("soB",0);
+        edtA.setHint("0");
+        edtB.setHint("0");
         Toast.makeText(MainActivity.this, "Wellcome back to MainActivity ! Your last edit text : a= " + a + "  , b= " + b, Toast.LENGTH_LONG).show();
     }
 }
